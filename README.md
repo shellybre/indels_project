@@ -32,7 +32,7 @@ the other files you see : output files from phylip or dcj/hp runs (for the very 
 the main function is create_new_Tree_from_real(name,k). 
 this function gets the name of the tree you want to check and which method you want (-1=cga, 6=si). 
 
-in order to create the real tree you must have file (with the name you gave for the function) that contains two files : one called 'cogs', that contains the list of cogs for each leaf in the tree. 
+In order to create the real tree you must have folder (with the name you gave for the function) that contains two files : one called 'cogs', that contains the list of cogs for each leaf in the tree. 
 the other one called 'listCogs' that contains the newick file (the name have to be the same as the name of the main file, with .nhx ending). see example in input_real_data for this kind of file (in the example, listCogs have more files, you only need the .nhx one).  also replace the path in the beggining of the script to the path where this file is loacted. 
 you also must have the file phylip-param.txt (essential for the run). this file is essential for running phylip treedist (it answers the quaestion of treedist according to what we need). this file is in the input files.
 this function creates new tree from the distance matrix created given the cogs and the method. it also calculates rf between the given and the new tree. 
